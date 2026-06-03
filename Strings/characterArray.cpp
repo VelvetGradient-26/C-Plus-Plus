@@ -11,22 +11,21 @@ int main(){
     cout << "Length of String: " << strlen(str) << endl; 
 
     // taking a string input as a character array
-    char string[100]; 
+    char array[100]; 
 
     // cout << "Enter your string: "; 
     // cin >> str; // stops reading after a space (the remaining characters are stored in buffer)
     // cout << str <<endl; 
 
     cout << "Enter your string: "; 
-    cin.getline(str, 100); // has an optional delimiter argument
-    cout << str; 
+    cin.getline(array, 100); // has an optional delimiter argument
+    cout << array << endl; 
 
     // Manually calculate length of the string
     int len = 0; 
-    for(int i=0; str[i] != '\0'; i++){
+    for(int i=0; array[i] != '\0'; i++){
         len++; 
     }
 
     cout << "Length of string: " << len << endl; 
-
 }
